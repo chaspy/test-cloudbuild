@@ -11,7 +11,7 @@ ARG CGO_ENABLED=0
 ARG GOOS=linux
 ARG GOARCH=amd64
 RUN go build \
-    -o /go/bin/circleci-insights-prometheus-exporter \
+    -o /go/bin/test-cloudbuild \
     -ldflags '-s -w'
 
 FROM alpine:3.14.0 as runner
