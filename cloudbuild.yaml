@@ -5,7 +5,7 @@ steps:
           '-t', 'gcr.io/$PROJECT_ID/test-cloudbuild-image:latest',
           '.' ]
     env:
-      'COMMIT_SHA=$COMMIT_SHA'
+    - 'COMMIT_SHA=$COMMIT_SHA'
   - name: 'gcr.io/cloud-builders/docker'
     args: ['push', 'gcr.io/$PROJECT_ID/test-cloudbuild-image']
 images:
