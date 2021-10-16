@@ -6,7 +6,7 @@ steps:
         '-t', 'gcr.io/$PROJECT_ID/test-cloudbuild-image:latest',
         '.'
       ]
-    env:
-      'COMMIT_SHA=$COMMIT_SHA'
+  env:
+    'COMMIT_SHA=$COMMIT_SHA'
 images:
 - 'gcr.io/$PROJECT_ID/test-cloudbuild-image:latest'
