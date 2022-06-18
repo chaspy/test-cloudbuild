@@ -14,7 +14,7 @@ RUN go build \
     -o /go/bin/test-cloudbuild \
     -ldflags '-s -w'
 
-FROM alpine:3.14.0 as runner
+FROM alpine:3.16.0 as runner
 
 COPY --from=builder /go/bin/test-cloudbuild /app/test-cloudbuild
 
