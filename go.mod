@@ -1,3 +1,3 @@
 module github.com/chaspy/test-cloudbuild
 
-go 1.16
+go 1.19
